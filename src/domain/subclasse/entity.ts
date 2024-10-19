@@ -1,0 +1,3 @@
+interface SubClasse {
+  name: string
+}

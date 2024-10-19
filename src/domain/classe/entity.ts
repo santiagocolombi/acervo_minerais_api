@@ -1,0 +1,3 @@
+interface Classe {
+  name: string
+}
