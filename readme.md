@@ -16,3 +16,6 @@ Nossa aplicação é separada por camadas
 
 2. usecase (casos de uso)
 3. infratructure (infraestrutura da aplicação)
+
+- 3.1 api (reponsável por expor a nossa aplicação)
+- 3.2 repository (reponsável pelo armazenamento e consulta de dados)

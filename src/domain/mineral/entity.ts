@@ -1,4 +1,4 @@
-interface Mineral {
+export interface Mineral {
   name: string
   description: string
 }

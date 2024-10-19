@@ -2,15 +2,14 @@
 
 // ESM
 import Fastify from 'fastify'
+import { mineralRoutes } from './route/mineral.route'
 
 const fastify = Fastify({
   logger: true
 })
 
 // Declare a route
-fastify.get('/', function (_, reply) {
-  reply.send({ name: 'turmanila' })
-})
+fastify.register(mineralRoutes, { prefix: "mineral" })
 
 // Run the server!
 fastify.listen({ port: 3000 }, function (err, _) {
