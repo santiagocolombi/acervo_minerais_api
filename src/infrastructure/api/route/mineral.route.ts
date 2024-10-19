@@ -1,9 +1,9 @@
 import { FastifyInstance } from "fastify";
-import { MineralController } from "../controller/mineral.controller";
+import { MineralHandler } from "../handler/mineral.handler";
 
-const mineralController = new MineralController()
+const mineralHandler = new MineralHandler()
 
 export async function mineralRoutes(app: FastifyInstance) {
-  app.get("/find-one", mineralController.findOne)
-  app.get("/find-many", mineralController.findMany)
+  app.get("/find-one", mineralHandler.findOne)
+  app.get("/find-many", mineralHandler.findMany)
 }

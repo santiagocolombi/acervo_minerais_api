@@ -6,14 +6,14 @@ import { FastifyReply, FastifyRequest } from "fastify"
 const findOneMineralUsecase = new FindOneMineralUsecase()
 const findManyMineralUsecase = new FindManyMineralUsecase()
 
-export class MineralController {
+export class MineralHandler {
   findOne(request: FastifyRequest, reply: FastifyReply) {
     const { name } = request.query as { name: string }
     const mineral = findOneMineralUsecase.execute({ name })
     reply.send(mineral)
   }
   findMany(request: FastifyRequest, reply: FastifyReply) {
-    const { name } = request.query as { name: string[] }
+    const { name, } = request.query as { name: string[] }
     const mineral = findManyMineralUsecase.execute({ name })
     reply.send(mineral)
   }

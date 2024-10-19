@@ -9,6 +9,7 @@ const fastify = Fastify({
 })
 
 // Declare a route
+
 fastify.register(mineralRoutes, { prefix: "mineral" })
 
 // Run the server!
