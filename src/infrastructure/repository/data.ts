@@ -12,7 +12,7 @@ const minerais: Mineral[] = [
     properties: {
       color: "amarelo",
       diafaneidade: "transparente,translucido",
-      trace: "incolor"
+      trace: "incolor",
     }
   },
 ]
