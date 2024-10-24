@@ -7,6 +7,9 @@ export class MineralRepository {
   }
   findMany(props: { name: string[] }) {
     const { name } = props
+    if (!name) {
+      return minerais
+    }
     return minerais.filter(mineral => name.includes(mineral.name))
   }
 }

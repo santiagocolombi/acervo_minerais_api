@@ -3,13 +3,18 @@
 // ESM
 import Fastify from 'fastify'
 import { mineralRoutes } from './route/mineral.route'
+import cors from "@fastify/cors"
 
 const fastify = Fastify({
   logger: true
 })
 
-// Declare a route
+// cors configuration
+fastify.register(cors, {
+  origin: 'http://localhost:5173',
+})
 
+// Declare a route
 fastify.register(mineralRoutes, { prefix: "mineral" })
 
 // Run the server!

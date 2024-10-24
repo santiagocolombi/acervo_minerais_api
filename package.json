@@ -9,6 +9,7 @@
   "author": "santiago, italo",
   "license": "ISC",
   "dependencies": {
+    "@fastify/cors": "^9.0.1",
     "fastify": "^4.28.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"

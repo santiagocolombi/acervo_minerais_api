@@ -19,3 +19,7 @@ Nossa aplicação é separada por camadas
 
 - 3.1 api (reponsável por expor a nossa aplicação)
 - 3.2 repository (reponsável pelo armazenamento e consulta de dados)
+
+Nossa aplicação NÃO é a api.
+Nossa aplicação NÃO é a banco de dados.
+Nossa aplicação são os casos de uso.

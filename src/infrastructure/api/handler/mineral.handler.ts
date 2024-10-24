@@ -13,7 +13,7 @@ export class MineralHandler {
     reply.send(mineral)
   }
   findMany(request: FastifyRequest, reply: FastifyReply) {
-    const { name, } = request.query as { name: string[] }
+    const { name } = request.query as { name: string[] }
     const mineral = findManyMineralUsecase.execute({ name })
     reply.send(mineral)
   }
